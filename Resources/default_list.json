@@ -1,0 +1,128 @@
+[
+  {
+    "group": "缓存 · 可放心删",
+    "label": "浏览器缓存",
+    "path": "~/Library/Caches/Google",
+    "note": "只是网页缓存，不含书签、密码、登录状态",
+    "risk": "safe"
+  },
+  {
+    "group": "缓存 · 可放心删",
+    "label": "IDE 索引缓存",
+    "path": "~/Library/Caches/JetBrains",
+    "note": "IDEA / PyCharm 的代码索引，删了重开项目会自己重建（首次索引稍慢）",
+    "risk": "safe"
+  },
+  {
+    "group": "缓存 · 可放心删",
+    "label": "Homebrew 下载缓存",
+    "path": "~/Library/Caches/Homebrew",
+    "note": "下载好的安装包，brew cleanup 也能清",
+    "risk": "safe"
+  },
+  {
+    "group": "缓存 · 可放心删",
+    "label": "npm 缓存",
+    "path": "~/.npm",
+    "note": "npm cache clean --force 等效",
+    "risk": "safe"
+  },
+  {
+    "group": "缓存 · 可放心删",
+    "label": "pnpm 内容仓库",
+    "path": "~/.pnpm-store",
+    "note": "已装项目的 node_modules 是硬链接，删了不会坏；下次装依赖要重新下载",
+    "risk": "caution"
+  },
+  {
+    "group": "缓存 · 可放心删",
+    "label": "Gradle 目录",
+    "path": "~/.gradle",
+    "note": "caches 是下载来的依赖，大头常在 wrapper 的分发版",
+    "risk": "caution"
+  },
+  {
+    "group": "缓存 · 可放心删",
+    "label": "Xcode 编译产物",
+    "path": "~/Library/Developer/Xcode/DerivedData",
+    "note": "重新编译会再生成，从清理工具里删也行",
+    "risk": "safe"
+  },
+  {
+    "group": "缓存 · 可放心删",
+    "label": "pip 下载缓存",
+    "path": "~/Library/Caches/pip",
+    "note": "Python 装包时下载的轮子",
+    "risk": "safe"
+  },
+  {
+    "group": "缓存 · 可放心删",
+    "label": "整个 Caches",
+    "path": "~/Library/Caches",
+    "note": "总大小参考，想逐个看就点上面那些条目",
+    "risk": "caution"
+  },
+  {
+    "group": "缓存 · 可放心删",
+    "label": "废纸篓",
+    "path": "~/.Trash",
+    "note": "系统禁止第三方统计它的大小（会显示 ?）。清空要在访达右键废纸篓",
+    "risk": "safe"
+  },
+  {
+    "group": "应用数据 · 看清再动",
+    "label": "苹果动态壁纸素材",
+    "path": "~/Library/Application Support/com.apple.wallpaper",
+    "note": "航拍动态壁纸的视频素材，删了会重新下载",
+    "risk": "caution"
+  },
+  {
+    "group": "应用数据 · 看清再动",
+    "label": "IDE 配置与插件",
+    "path": "~/Library/Application Support/JetBrains",
+    "note": "设置、插件、许可证，删了等于重装 IDE",
+    "risk": "keep"
+  },
+  {
+    "group": "应用数据 · 看清再动",
+    "label": "编辑器数据",
+    "path": "~/Library/Application Support/Cursor",
+    "note": "编辑器配置 + 会话记录",
+    "risk": "keep"
+  },
+  {
+    "group": "应用数据 · 看清再动",
+    "label": "游戏平台",
+    "path": "~/Library/Application Support/Steam",
+    "note": "装了游戏，不是垃圾",
+    "risk": "keep"
+  },
+  {
+    "group": "应用数据 · 看清再动",
+    "label": "Maven 本地仓库",
+    "path": "~/Maven",
+    "note": "不是缓存。删了所有依赖重下；~/.m2/repository 可能另有一份",
+    "risk": "keep"
+  },
+  {
+    "group": "我自己的目录 · 换成你的",
+    "label": "下载",
+    "path": "~/Downloads",
+    "note": "装完就没人管的安装包大多堆在这",
+    "risk": "caution"
+  },
+  {
+    "group": "我自己的目录 · 换成你的",
+    "label": "文稿",
+    "path": "~/Documents",
+    "note": "开了 iCloud 同步 + 优化存储时，没下载下来的显示 ☁︎ 云端，本地不占空间",
+    "risk": "keep"
+  },
+  {
+    "group": "我自己的目录 · 换成你的",
+    "label": "代码目录",
+    "path": "~/Developer",
+    "note": "示例路径。改成你自己的仓库根目录，或者直接从访达拖进卡片模式",
+    "risk": "keep"
+  }
+]

@@ -1,0 +1,22 @@
+# 编译产物：build.sh 会把 App 装到 ~/Applications，仓库里不留二进制
+.build/
+*.app/
+DerivedData/
+.swiftpm/
+
+# 本机真实数据永远不该进仓库
+list.json
+actions.log
+backups/
+Resources/default_list.local.json
+
+# macOS
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+
+# 编辑器
+*.swp
+.idea/
+.vscode/
