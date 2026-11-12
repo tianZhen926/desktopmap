@@ -35,6 +35,9 @@ chmod +x "$STAGE/Contents/MacOS/DesktopMap"
 rm -rf "$slice"
 
 cp Resources/Info.plist "$STAGE/Contents/Info.plist"
+if [ -f Resources/AppIcon.icns ]; then
+  cp Resources/AppIcon.icns "$STAGE/Contents/Resources/AppIcon.icns"
+fi
 # 「恢复出厂清单」的种子。想留一份自己的清单又不提交进仓库，
 # 就放 Resources/default_list.local.json（已在 .gitignore 里），它会盖掉公开那份。
 # 打包对外发布时必须 DM_SEED=public，别把自己的目录名发到网上。

@@ -8,6 +8,8 @@
 	<string>桌面地图</string>
 	<key>CFBundleExecutable</key>
 	<string>DesktopMap</string>
+	<key>CFBundleIconFile</key>
+	<string>AppIcon</string>
 	<key>CFBundleIdentifier</key>
 	<string>dev.fengtianzeng.desktopmap</string>
 	<key>CFBundleInfoDictionaryVersion</key>

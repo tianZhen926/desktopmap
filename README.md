@@ -1,3 +1,5 @@
+<p align="center"><img src="docs/icon.png" width="128" height="128" alt="DesktopMap 图标"></p>
+
 <h1 align="center">🗺️ 桌面地图 DesktopMap</h1>
 
 <p align="center">
@@ -90,6 +92,10 @@ git clone https://github.com/tianZhen926/desktopmap.git && cd desktopmap
 ./build.sh      # 本机架构，约 40 秒 → ~/Applications/DesktopMap.app
 ./release.sh    # 发布用：通用二进制 + dmg + zip + 校验和 + 上线前隐私自检
 ```
+
+> 🎨 **图标**：`Resources/AppIcon.icns` 由 `./make-icon.sh <一张方图>` 生成——裁中心主体、画圆角遮罩、
+> 按 Apple 1024 网格留边、切 10 个尺寸再 `iconutil` 打包。主体图在 `Resources/AppIcon-source.png`，
+> README 顶部用的是 `docs/icon.png`。图标由生成模型产出、不含第三方素材，可自由替换。
 
 | 开关 | 作用 |
 | --- | --- |
