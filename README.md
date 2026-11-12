@@ -33,6 +33,26 @@ macOS 原生小程序：SwiftUI + AppKit，一个窗口贴在桌面壁纸那一�
 | 状态栏 | 菜单 + 磁盘剩余空间；卡片模式开着时左键直接开合浮层，右键出菜单 |
 | 卡片模式 | 全屏浮层，按分组成网格，带 Launchpad 式进出动画；支持拖入、搜索、筛选、详情条 |
 
+## 下载
+
+去 [Releases](https://github.com/tianZhen926/desktopmap/releases) 拿 `DesktopMap-<版本>.dmg`（推荐）或 `.zip`。
+通用二进制，Apple Silicon 和 Intel 都支持，需要 macOS 13 及以上。
+
+装法：打开 dmg，把 DesktopMap 拖进「应用程序」。
+
+**第一次打开会被 Gatekeeper 拦。** 这个包只做 ad-hoc 自签，没有 Apple 开发者证书，也没有公证——
+纯本机工具的代价。绕过方式二选一：
+
+```bash
+xattr -cr /Applications/DesktopMap.app   # 或右键 App → 打开 → 再点一次「打开」
+```
+
+下载后可以核对校验和（值在 Release 页面的 `SHA256SUMS.txt` 里）：
+
+```bash
+shasum -a 256 ~/Downloads/DesktopMap-*.dmg
+```
+
 ## 用法
 
 ```bash

@@ -1,5 +1,6 @@
 # 编译产物：build.sh 会把 App 装到 ~/Applications，仓库里不留二进制
 .build/
+.releases/
 *.app/
 DerivedData/
 .swiftpm/
